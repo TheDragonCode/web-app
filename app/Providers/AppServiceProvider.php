@@ -2,27 +2,29 @@
 
 namespace App\Providers;
 
+use DragonCode\ApiResponse\Services\Response;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Telescope\TelescopeApplicationServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
     public function register()
     {
-        //
+        $this->registerResponseExtra();
+        $this->registerTelescope();
     }
 
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
+    protected function registerTelescope(): void
     {
-        //
+        if (config('telescope.enabled') && class_exists(TelescopeApplicationServiceProvider::class)) {
+            $this->app->register(TelescopeServiceProvider::class);
+        }
+    }
+
+    protected function registerResponseExtra(): void
+    {
+        config('app.debug')
+            ? Response::allowWith()
+            : Response::withoutWith();
     }
 }
