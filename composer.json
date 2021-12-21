@@ -9,7 +9,7 @@
         "doctrine/dbal": "^3.2",
         "dragon-code/api-response": "^9.0",
         "dragon-code/contracts": "^2.13",
-        "dragon-code/laravel-actions": "^2.1",
+        "dragon-code/laravel-migration-actions": "^2.1",
         "dragon-code/laravel-cache": "^2.9",
         "dragon-code/laravel-json-response": "^2.0",
         "dragon-code/laravel-support": "^3.1",
