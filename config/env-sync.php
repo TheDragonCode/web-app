@@ -10,7 +10,7 @@ return [
         'LOG_LEVEL'   => 'debug',
 
         'DB_CONNECTION' => 'mysql',
-        'DB_HOST'       => '127.0.0.1',
+        'DB_HOST'       => 'mysql',
         'DB_PORT'       => 3306,
         'DB_DATABASE'   => 'default',
 
@@ -20,7 +20,7 @@ return [
         'SESSION_DRIVER'   => 'redis',
         'SESSION_LIFETIME' => 120,
 
-        'REDIS_HOST' => '127.0.0.1',
+        'REDIS_HOST' => 'redis',
         'REDIS_PORT' => 6379,
 
         'MAIL_MAILER' => 'smtp',

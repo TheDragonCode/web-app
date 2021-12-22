@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a9cad30eda9136a03209c99bdb1ba87",
+    "content-hash": "6d27c695263eef1387a85699fdc742aa",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1596,17 +1596,17 @@
             "time": "2021-12-21T18:41:54+00:00"
         },
         {
-            "name": "dragon-code/web-app-support",
-            "version": "v0.0.1",
+            "name": "dragon-code/web-core",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:TheDragonCode/web-app-support.git",
-                "reference": "cc397a90f40614fd5dc7501b637ef3e90354480a"
+                "url": "git@github.com:TheDragonCode/web-core.git",
+                "reference": "9ae7d8d476502e5f262d4831697ee2dc7ba0a7ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheDragonCode/web-app-support/zipball/cc397a90f40614fd5dc7501b637ef3e90354480a",
-                "reference": "cc397a90f40614fd5dc7501b637ef3e90354480a",
+                "url": "https://api.github.com/repos/TheDragonCode/web-core/zipball/9ae7d8d476502e5f262d4831697ee2dc7ba0a7ab",
+                "reference": "9ae7d8d476502e5f262d4831697ee2dc7ba0a7ab",
                 "shasum": ""
             },
             "require": {
@@ -1642,16 +1642,16 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "DragonCode\\WebAppSupport\\Providers\\AppServiceProvider",
-                        "DragonCode\\WebAppSupport\\Providers\\BladeServiceProvider",
-                        "DragonCode\\WebAppSupport\\Providers\\RouteServiceProvider",
-                        "DragonCode\\WebAppSupport\\ServiceProvider"
+                        "DragonCode\\WebCore\\Providers\\AppServiceProvider",
+                        "DragonCode\\WebCore\\Providers\\BladeServiceProvider",
+                        "DragonCode\\WebCore\\Providers\\RouteServiceProvider",
+                        "DragonCode\\WebCore\\ServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "DragonCode\\WebAppSupport\\": "src"
+                    "DragonCode\\WebCore\\": "src"
                 }
             },
             "autoload-dev": {
@@ -1668,12 +1668,12 @@
                     "email": "helldar@ai-rus.com"
                 }
             ],
-            "description": "Helper's package for the Dragon Code apps",
+            "description": "Web core for the Dragon Code apps",
             "support": {
-                "source": "https://github.com/TheDragonCode/web-app-support/tree/v0.0.1",
-                "issues": "https://github.com/TheDragonCode/web-app-support/issues"
+                "source": "https://github.com/TheDragonCode/web-core/tree/v0.0.2",
+                "issues": "https://github.com/TheDragonCode/web-core/issues"
             },
-            "time": "2021-12-22T00:36:09+00:00"
+            "time": "2021-12-22T09:35:03+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -8060,9 +8060,6 @@
             "require": {
                 "php": "^7.1 || ^8.0"
             },
-            "replace": {
-                "myclabs/deep-copy": "self.version"
-            },
             "require-dev": {
                 "doctrine/collections": "^1.0",
                 "doctrine/common": "^2.6",
@@ -9971,5 +9968,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }

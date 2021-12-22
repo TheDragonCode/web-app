@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use DragonCode\WebAppSupport\Http\Controllers\Controller as BaseController;
+use DragonCode\WebCore\Http\Controllers\Controller as BaseController;
 
-class Controller extends BaseController
+abstract class Controller extends BaseController
 {
 }
