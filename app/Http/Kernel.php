@@ -2,11 +2,11 @@
 
 namespace App\Http;
 
-use App\Http\Middleware\Authenticate;
-use App\Http\Middleware\EncryptCookies;
-use App\Http\Middleware\TrimStrings;
-use App\Http\Middleware\TrustHosts;
-use App\Http\Middleware\TrustProxies;
+use DragonCode\WebAppSupport\Http\Middleware\Authenticate;
+use DragonCode\WebAppSupport\Http\Middleware\EncryptCookies;
+use DragonCode\WebAppSupport\Http\Middleware\TrimStrings;
+use DragonCode\WebAppSupport\Http\Middleware\TrustHosts;
+use DragonCode\WebAppSupport\Http\Middleware\TrustProxies;
 use Fruitcake\Cors\HandleCors;
 use Illuminate\Auth\Middleware\AuthenticateWithBasicAuth;
 use Illuminate\Auth\Middleware\Authorize;

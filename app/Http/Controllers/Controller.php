@@ -2,20 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\Controller as BaseController;
-use Symfony\Component\HttpFoundation\JsonResponse;
+use DragonCode\WebAppSupport\Http\Controllers\Controller as BaseController;
 
 class Controller extends BaseController
 {
-    use AuthorizesRequests;
-    use DispatchesJobs;
-    use ValidatesRequests;
-
-    protected function json(mixed $data = null, int $status = null, array $with = []): JsonResponse
-    {
-        return api_response($data, $status, $with);
-    }
 }
