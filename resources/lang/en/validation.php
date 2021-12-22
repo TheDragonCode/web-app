@@ -153,8 +153,8 @@ return [
         'year'                  => 'Year',
     ],
     'custom'               => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'attribute_name' => [
+            'rule_name' => 'custom-message',
         ],
     ],
 ];
