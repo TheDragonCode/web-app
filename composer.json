@@ -1,32 +1,13 @@
 {
-    "name": "dragon-code/web-project",
-    "description": "The Dragon Code Project.",
+    "name": "dragon-code/web-app",
+    "description": "The Dragon Code Project",
     "license": "MIT",
     "type": "project",
     "require": {
         "php": "^8.1",
-        "cviebrock/eloquent-sluggable": "^8.0",
-        "dragon-code/laravel-support": "^3.1",
-        "dragon-code/web-core": "^0.0.2"
+        "cviebrock/eloquent-sluggable": "^9.0",
+        "dragon-code/web-core": "^0.0.5"
     },
-    "require-dev": {
-        "dragon-code/env-sync-laravel": "^2.0",
-        "dragon-code/pretty-routes": "^3.0",
-        "facade/ignition": "^2.17",
-        "fakerphp/faker": "^1.17",
-        "laravel-lang/http-statuses": "^2.0",
-        "laravel-lang/publisher": "^11.1",
-        "laravel/telescope": "^4.6",
-        "mockery/mockery": "^1.4",
-        "nunomaduro/collision": "^5.10",
-        "phpunit/phpunit": "^9.5"
-    },
-    "repositories": [
-        {
-            "type": "github",
-            "url": "git@github.com:TheDragonCode/web-core.git"
-        }
-    ],
     "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
@@ -52,14 +33,14 @@
     },
     "scripts": {
         "post-update-cmd": [
-            "php artisan vendor:publish --tag=laravel-assets --force",
-            "php artisan lang:update",
-            "php artisan env:sync",
-            "php artisan telescope:publish",
-            "php artisan optimize:clear"
+            "php artisan vendor:publish --tag=laravel-assets --force --ansi",
+            "php artisan lang:update --ansi",
+            "php artisan env:sync --ansi",
+            "php artisan telescope:publish --ansi",
+            "php artisan optimize:clear --ansi"
         ],
         "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump --ansi",
             "@php artisan package:discover --no-ansi"
         ]
     }
