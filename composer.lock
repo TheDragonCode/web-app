@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f80fe1b6eaa503ccc5b45c021818e36a",
+    "content-hash": "0a658260abecb4feb337db7ca9814d51",
     "packages": [
         {
             "name": "archtechx/enums",
@@ -1877,16 +1877,16 @@
         },
         {
             "name": "dragon-code/web-core",
-            "version": "v0.0.5",
+            "version": "v0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TheDragonCode/web-core.git",
-                "reference": "36b761c0985fb7185afb7fdf3efab0384dd667fd"
+                "reference": "c4e2890b338936315d4ad393441461e39af58814"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheDragonCode/web-core/zipball/36b761c0985fb7185afb7fdf3efab0384dd667fd",
-                "reference": "36b761c0985fb7185afb7fdf3efab0384dd667fd",
+                "url": "https://api.github.com/repos/TheDragonCode/web-core/zipball/c4e2890b338936315d4ad393441461e39af58814",
+                "reference": "c4e2890b338936315d4ad393441461e39af58814",
                 "shasum": ""
             },
             "require": {
@@ -1900,6 +1900,7 @@
                 "dragon-code/laravel-json-response": "^2.2",
                 "dragon-code/laravel-migration-actions": "^2.8",
                 "dragon-code/laravel-route-names": "^1.3",
+                "dragon-code/laravel-support": "^3.3",
                 "dragon-code/simple-dto": "^2.2",
                 "dragon-code/support": "^5.8",
                 "ext-json": "*",
@@ -1955,9 +1956,9 @@
             "description": "Web core for the Dragon Code apps",
             "support": {
                 "issues": "https://github.com/TheDragonCode/web-core/issues",
-                "source": "https://github.com/TheDragonCode/web-core/tree/v0.0.5"
+                "source": "https://github.com/TheDragonCode/web-core/tree/v0.0.6"
             },
-            "time": "2022-03-22T15:34:55+00:00"
+            "time": "2022-03-22T15:52:56+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
