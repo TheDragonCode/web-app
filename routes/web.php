@@ -2,4 +2,6 @@
 
 declare(strict_types=1);
 
-app('router')->get('/', fn () => api_response('ok'));
+use App\Http\Controllers\Web\WelcomeController;
+
+app('router')->get('/', WelcomeController::class);

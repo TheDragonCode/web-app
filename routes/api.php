@@ -1,9 +1,10 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Api\IndexController;
+use App\Http\Controllers\Api\Users\UserController;
 
 app('router')
     ->middleware('auth:sanctum')
-    ->get('/user', fn (Request $request) => api_response($request->user()));
+    ->get('/user', [UserController::class, 'me']);
 
-app('router')->get('/', fn () => api_response('ok'));
+app('router')->get('/', IndexController::class);
